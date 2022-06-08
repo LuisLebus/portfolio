@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Luis Lebus</title>
 </head>
+
 <body>
-    LUIS LEBUS
+
+    <div class="circulos">
+        <svg class="circulo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#000000" d="M23.4,-34.4C32.3,-20.5,42.9,-14.9,52.6,-2.9C62.3,9.1,71.2,27.7,66.7,41.3C62.1,54.9,44.2,63.5,29.2,60.3C14.1,57.2,2.1,42.4,-8.1,33.7C-18.2,25,-26.4,22.5,-39.4,15.3C-52.5,8.1,-70.3,-3.7,-72.9,-17.1C-75.6,-30.4,-63.1,-45.3,-48.4,-58.3C-33.7,-71.2,-16.8,-82.1,-4.8,-76.4C7.3,-70.7,14.5,-48.3,23.4,-34.4Z" transform="translate(100 100)" />
+          </svg>
+    </div>
+
+    <header class="header">
+        <a href="#inicio" class="a" title="Luis Lebus">Luis Lebus</a>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="#inicio" title="Inicio">Inicio</a></li>
+                <li class="li"><a class="a" href="#trabajos" title="Proyectos">Proyectos</a></li>
+                <li class="li"><a class="a" href="#sobre_mi" title="Sobre mí">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="seccion animate__animated animate__pulse" id="inicio">
+            <section class="section">
+                <h1 class="h1">Luis Lebus</h1>
+                <h2 class="h2">Desarrollador sistemas embebidos</h2>
+                <ul class="ul">
+                    <li class="li">
+                        <a href="https://www.linkedin.com/in/luislebus/" class="a" title="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                    <li class="li">
+                        <a href="https://github.com/LuisLebus" class="a" title="Github" target="_blank" rel="noopener noreferrer">Github</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="seccion jobs" id="trabajos">
+            <h2 class="h2">Proyectos</h2>
+            <p class="p">Aquí puede ver algunos de mis projectos.</p>
+            
+            <div class="type">
+                <h3 class="h3">Software</h3>
+                <div class="grid">
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/cowack_device" title="Cowack device">Cowack device</a>
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/cowack_gateway" title="Cowack gateway">Cowack gateway</a> 
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/Main-Node" title="Main Node">Main Node</a> 
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/Implement-Switch-Node" title="Implement Switch Node">Implement Switch Node</a> 
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/GPS-Node" title="GPS Node">GPS Node</a> 
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/esp32_audio" title="ESP32 Audio">ESP32 Audio</a>
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/esp32_can_sniffer" title="ESP32 CAN Sniffer">ESP32 CAN Sniffer</a>
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/esp32_uart_mqtt_field" title="ESP32 Bridge UART/MQTT">ESP32 UART/MQTT Field</a>
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/esp32_uart_mqtt_office" title="ESP32 Bridge UART/MQTT">ESP32 UART/MQTT Office</a>
+                    <a class="a" target="_blank" rel="noopener noreferrer" href="https://github.com/LuisLebus/esp32_iron" title="ESP32 Iron">ESP32 Iron</a> 
+                </div>
+            </div>
+
+            <div class="type">
+                <h3 class="h3">Hardware</h3>
+                <div class="grid">
+                    <a class="a" href="https://github.com/LuisLebus/IoTGW-V1" target="_blank" rel="noopener noreferrer" title="IoTGW-V1">IoTGW-V1</a>  
+                    <a class="a" href="https://github.com/LuisLebus/IoTGW-V2" target="_blank" rel="noopener noreferrer" title="IoTGW-V2">IoTGW-V2</a>  
+                    <a class="a" href="https://github.com/LuisLebus/IoTGW-V3" target="_blank" rel="noopener noreferrer" title="IoTGW-V3">IoTGW-V3</a> 
+                    <a class="a" href="https://github.com/LuisLebus/cloud-IO" target="_blank" rel="noopener noreferrer" title="cloud-IO">cloud-IO</a>  
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="seccion" id="sobre_mi">
+            <h2 class="h2">Sobre mí</h2>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non, cum amet dolore eum explicabo!</p>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non, cum amet dolore eum explicabo!</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span class="span">Gracias por su visita</span>
+    </footer>
+
 </body>
 </html>
+
+
+
+

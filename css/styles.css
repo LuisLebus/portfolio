@@ -1,0 +1,238 @@
+:root {
+  --tipo-principal: 'Rubik', sans-serif;
+  --tipo-titular: 'Playfair Display', serif;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------   RESET   ----------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-family: var(--tipo-principal);
+  font-size: 100%;
+  min-height: 100vh;
+  background-color:silver;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* -----------------------------------   HEADER   ----------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+.header {
+  width: 100%;
+  min-height: 10vh;
+  background: aqua;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  display: none;
+}
+
+.header .ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .li {
+  margin: 0 1rem;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* -----------------------------------   FOOTER   ----------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.footer {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------   page   ------------------------------------ */
+/* ---------------------------------------------------------------------------------- */
+
+.circulos {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+ }
+
+ .circulo {
+  filter: blur(320px);
+  animation: circulo 25s ease infinite both;
+}
+
+.main {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.seccion {
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.seccion .h1 {
+  font-family: var(--tipo-titular);
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.seccion .h2 {
+  font-family: var(--tipo-titular);
+  font-size: 3rem;
+  padding: 1rem;
+} 
+
+.seccion .h3 {
+  font-size: 2rem;
+  padding: 1rem;
+} 
+
+.seccion .ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion .ul .li {
+  margin: 2rem;
+}
+
+.seccion .ul .li .a {
+  font-weight: 600;
+  border: 1px solid rgb(0,0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+
+  transition: all 0.5s ease;
+}
+
+.seccion .ul .li .a:hover {
+  border: 1px solid rgb(0,0, 0, 1);
+}
+
+.seccion .p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.jobs {
+  background-color: rgb(211, 211, 211, 0.6);
+  box-shadow: 0 0 1rem 1rem rgb(211, 211, 211, 0.6);
+}
+
+.seccion .type {
+  margin: 2rem 0;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; 
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.grid .a {
+  width: 25vw;
+  height: 15vh;
+
+  border: solid 1px black;
+  border-radius: 1rem;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; 
+
+  font-weight: 600;
+  font-size: 1.1rem;
+  
+  padding: 1rem;
+  
+  transition: all 0.5s ease;
+}
+
+.grid .a:hover {
+  background-color: black;
+  color: white;
+}
+
+@keyframes circulo {
+  from {
+    transform: translateY(-120%) rotate(0deg);
+  }
+  to {
+    transform: translateY(160%) rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .grid .a {
+    width: 40vw;
+  }
+
+  .circulo {
+    filter: blur(120px);
+  }
+}
