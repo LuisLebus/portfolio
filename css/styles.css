@@ -127,6 +127,15 @@ body {
   padding: 1rem;
 }
 
+.proy {
+  margin-top: 7rem;
+  transition: all 1s;
+}
+
+.proy:hover {
+  font-size: larger;
+}
+
 .seccion .h1 {
   font-family: var(--tipo-titular);
   font-size: 5rem;
